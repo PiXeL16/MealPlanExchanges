@@ -12,11 +12,14 @@ target 'MealPlanExchanges' do
 
   # Logging
   pod 'CocoaLumberjack/Swift'
+  
+  # Color manipulation
+  pod 'DynamicColor'
 
   # Reactive
   pod 'RxCocoa'
   pod 'RxSwift'  
-  pod "RxRealm"
+  pod 'RxRealm'
 
   # JSON Parser
   pod 'ModelMapper', '~> 1.0.3'

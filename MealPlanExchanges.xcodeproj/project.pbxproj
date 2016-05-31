@@ -105,12 +105,12 @@
 		835736261CFD3DC900AF6C09 = {
 			isa = PBXGroup;
 			children = (
+				B8E2FB7CFF0897F779F82075 /* Frameworks */,
 				835736311CFD3DC900AF6C09 /* MealPlanExchanges */,
 				835736461CFD3DC900AF6C09 /* MealPlanExchangesTests */,
 				835736511CFD3DC900AF6C09 /* MealPlanExchangesUITests */,
-				835736301CFD3DC900AF6C09 /* Products */,
 				77245B88FD89CA00735B1EC7 /* Pods */,
-				B8E2FB7CFF0897F779F82075 /* Frameworks */,
+				835736301CFD3DC900AF6C09 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,12 +127,17 @@
 		835736311CFD3DC900AF6C09 /* MealPlanExchanges */ = {
 			isa = PBXGroup;
 			children = (
+				835736601CFD4BEB00AF6C09 /* Model */,
+				835736641CFD4BFE00AF6C09 /* Util */,
+				835736631CFD4BF800AF6C09 /* ViewController */,
+				835736611CFD4BEF00AF6C09 /* ViewModel */,
+				835736621CFD4BF300AF6C09 /* Views */,
 				835736321CFD3DC900AF6C09 /* AppDelegate.swift */,
-				835736341CFD3DC900AF6C09 /* ViewController.swift */,
-				835736361CFD3DC900AF6C09 /* Main.storyboard */,
 				835736391CFD3DC900AF6C09 /* Assets.xcassets */,
-				8357363B1CFD3DC900AF6C09 /* LaunchScreen.storyboard */,
 				8357363E1CFD3DC900AF6C09 /* Info.plist */,
+				8357363B1CFD3DC900AF6C09 /* LaunchScreen.storyboard */,
+				835736361CFD3DC900AF6C09 /* Main.storyboard */,
+				835736341CFD3DC900AF6C09 /* ViewController.swift */,
 			);
 			path = MealPlanExchanges;
 			sourceTree = "<group>";
@@ -140,8 +145,8 @@
 		835736461CFD3DC900AF6C09 /* MealPlanExchangesTests */ = {
 			isa = PBXGroup;
 			children = (
-				835736471CFD3DC900AF6C09 /* MealPlanExchangesTests.swift */,
 				835736491CFD3DC900AF6C09 /* Info.plist */,
+				835736471CFD3DC900AF6C09 /* MealPlanExchangesTests.swift */,
 			);
 			path = MealPlanExchangesTests;
 			sourceTree = "<group>";
@@ -149,10 +154,45 @@
 		835736511CFD3DC900AF6C09 /* MealPlanExchangesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				835736521CFD3DC900AF6C09 /* MealPlanExchangesUITests.swift */,
 				835736541CFD3DC900AF6C09 /* Info.plist */,
+				835736521CFD3DC900AF6C09 /* MealPlanExchangesUITests.swift */,
 			);
 			path = MealPlanExchangesUITests;
+			sourceTree = "<group>";
+		};
+		835736601CFD4BEB00AF6C09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		835736611CFD4BEF00AF6C09 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		835736621CFD4BF300AF6C09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		835736631CFD4BF800AF6C09 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		835736641CFD4BFE00AF6C09 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		B8E2FB7CFF0897F779F82075 /* Frameworks */ = {
@@ -470,6 +510,7 @@
 				835736371CFD3DC900AF6C09 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		8357363B1CFD3DC900AF6C09 /* LaunchScreen.storyboard */ = {
@@ -478,6 +519,7 @@
 				8357363C1CFD3DC900AF6C09 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
