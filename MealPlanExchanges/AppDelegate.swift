@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //CocoaLumberjack initializer
         initLogging()
         
-        DDLogDebug("App Started")
+        DDLogInfo("App Started")
         
         // Override point for customization after application launch.
         return true
@@ -35,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         DDLog.addLogger(DDTTYLogger.sharedInstance()) // TTY = Xcode console
         DDLog.addLogger(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
+        
+        DDTTYLogger.sharedInstance().colorsEnabled = true
         
     }
 
