@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CocoaLumberjack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        //CocoaLumberjack initializer
+        initLogging()
+        
+        DDLogDebug("App Started")
+        
         // Override point for customization after application launch.
         return true
+    }
+    
+    /**
+     Init the Logging framework
+     
+     - returns:
+     */
+    func initLogging(){
+        
+        DDLog.addLogger(DDTTYLogger.sharedInstance()) // TTY = Xcode console
+        DDLog.addLogger(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
