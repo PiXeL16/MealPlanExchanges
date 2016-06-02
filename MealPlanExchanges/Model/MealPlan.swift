@@ -59,7 +59,7 @@ extension MealPlan{
         
         var returnValue = 0
         
-        for meal in self.mealsOfTheDay {
+        for meal in mealsOfTheDay {
             
             returnValue = returnValue + meal.getQuantityOfFoodGroup(foodGroup)
         }

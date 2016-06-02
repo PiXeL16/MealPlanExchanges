@@ -51,8 +51,6 @@ extension MealProtocol{
         
     }
     
-    
-    
     /**
      Returns the total of quantity of a food group
      
@@ -63,7 +61,8 @@ extension MealProtocol{
     func getQuantityOfFoodGroup(foodGroup: FoodGroups) -> Int{
         
         var returnValue = 0
-        for food in foods{
+        
+        for food in foods {
             
             if food.group == foodGroup{
                 returnValue = food.quantity
