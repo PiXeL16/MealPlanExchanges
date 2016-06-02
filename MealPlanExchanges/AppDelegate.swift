@@ -8,6 +8,7 @@
 
 import UIKit
 import CocoaLumberjack
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //CocoaLumberjack initializer
         initLogging()
+        //Inits firebase
+        //initFirebase()
         
         DDLogInfo("App Started")
         
@@ -37,6 +40,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DDLog.addLogger(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
         
         DDTTYLogger.sharedInstance().colorsEnabled = true
+        
+    }
+    
+    /**
+     Inits firebase
+     
+     - returns:
+     */
+    func initFirebase(){
+        
+        FIRApp.configure()
         
     }
 

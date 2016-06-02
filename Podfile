@@ -8,7 +8,8 @@ target 'MealPlanExchanges' do
   # Pods for MealPlanExchanges
     
   # Persistence
-  pod 'RealmSwift'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
   # Logging
   pod 'CocoaLumberjack/Swift'
@@ -18,8 +19,8 @@ target 'MealPlanExchanges' do
 
   # Reactive
   pod 'RxCocoa'
-  pod 'RxSwift'  
-  pod 'RxRealm'
+  pod 'RxSwift'
+  # pod 'RxFirebase'
 
   # JSON Parser
   pod 'ModelMapper', '~> 1.0.3'
