@@ -1,52 +1,43 @@
 //
-//  MealPlan.swift
+//  MealPlanProtocol.swift
 //  MealPlanExchanges
 //
-//  Created by Chris Jimenez on 6/1/16.
+//  Created by Chris Jimenez on 6/2/16.
 //  Copyright © 2016 Chris Jimenez. All rights reserved.
 //
 
 import UIKit
 
 /**
- *  Represents a daily meal plan that the user setup for
+ *  Meals plan protocol
  */
-public struct MealPlan {
+protocol MealPlanProtocol {
     
-    var breakfast: MealProtocol
-    var morningSnack: MealProtocol
-    var lunch: MealProtocol
-    var afternoonSnack: MealProtocol
-    var dinner: MealProtocol
+    var breakfast: MealProtocol {get set}
+    var morningSnack: MealProtocol {get set}
+    var lunch: MealProtocol {get set}
+    var afternoonSnack: MealProtocol {get set}
+    var dinner: MealProtocol {get set}
+    
+}
+
+extension MealPlanProtocol{
     
     /// Array of meals of the day
-    var mealsOfTheDay: [MealProtocol]
-    {
+    var mealsOfTheDay: [MealProtocol]{
+    
         get{
             return [self.breakfast, self.morningSnack, self.lunch, self.afternoonSnack, self.dinner]
         }
     }
     
     var dairyTotal: Int{
-    
+        
         get{
             return getTotalFromFoodGroup(FoodGroups.Dairy)
         }
     }
     
-    init (breakfast: MealProtocol, morningSnack: MealProtocol, lunch: MealProtocol, afternoonSnack: MealProtocol, dinner: MealProtocol){
-        
-        self.breakfast      = breakfast
-        self.morningSnack   = morningSnack
-        self.lunch          = lunch
-        self.afternoonSnack = afternoonSnack
-        self.dinner         = dinner
-        
-    }
-}
-
-// MARK: - Totals
-extension MealPlan{
     
     /**
      Returns the sum of all the quantities in a specific food group
@@ -63,8 +54,9 @@ extension MealPlan{
             
             returnValue = returnValue + meal.getQuantityOfFoodGroup(foodGroup)
         }
-    
+        
         return returnValue
     }
+
     
 }
