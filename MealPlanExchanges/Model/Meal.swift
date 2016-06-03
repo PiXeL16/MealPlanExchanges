@@ -58,7 +58,7 @@ extension Meal{
      
      - returns: <#return value description#>
      */
-    func getQuantityOfFoodGroup(foodGroup: FoodTypes) -> Int{
+    public func getQuantityOfFoodGroup(foodGroup: FoodTypes) -> Int{
         
         var returnValue = 0
         

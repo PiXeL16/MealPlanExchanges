@@ -11,7 +11,7 @@ import UIKit
 /**
  *  Meals plan protocol
  */
-protocol MealPlanProtocol {
+public protocol MealPlanProtocol {
     
     var breakfast: Meal {get set}
     var morningSnack: Meal {get set}
@@ -34,7 +34,7 @@ extension MealPlanProtocol{
     var dairyTotal: Int{
         
         get{
-            return getTotalFromFoodGroup(FoodTypes.Dairy)
+            return getTotalFromFoodType(FoodTypes.Dairy)
         }
     }
     
@@ -46,13 +46,13 @@ extension MealPlanProtocol{
      
      - returns: <#return value description#>
      */
-    func getTotalFromFoodGroup(foodGroup: FoodTypes) -> Int{
+    public func getTotalFromFoodType(foodType: FoodTypes) -> Int{
         
         var returnValue = 0
         
         for meal in mealsOfTheDay {
             
-            returnValue = returnValue + meal.getQuantityOfFoodGroup(foodGroup)
+            returnValue = returnValue + meal.getQuantityOfFoodGroup(foodType)
         }
         
         return returnValue
