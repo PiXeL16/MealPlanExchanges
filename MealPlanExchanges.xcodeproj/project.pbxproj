@@ -16,14 +16,14 @@
 		835736481CFD3DC900AF6C09 /* MealPlanExchangesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835736471CFD3DC900AF6C09 /* MealPlanExchangesTests.swift */; };
 		835736531CFD3DC900AF6C09 /* MealPlanExchangesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835736521CFD3DC900AF6C09 /* MealPlanExchangesUITests.swift */; };
 		83A8AC2D1D0001E2005B9CE4 /* GeneralMealPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC2C1D0001E2005B9CE4 /* GeneralMealPlan.swift */; };
-		83A8AC311D00040C005B9CE4 /* MealProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC301D00040C005B9CE4 /* MealProtocol.swift */; };
+		83A8AC311D00040C005B9CE4 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC301D00040C005B9CE4 /* Meal.swift */; };
 		83A8AC331D000A7B005B9CE4 /* MealsOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC321D000A7B005B9CE4 /* MealsOfTheDay.swift */; };
 		83A8AC351D000BF8005B9CE4 /* Breakfast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC341D000BF8005B9CE4 /* Breakfast.swift */; };
 		83A8AC371D000F76005B9CE4 /* Dinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC361D000F76005B9CE4 /* Dinner.swift */; };
 		83A8AC391D000FD5005B9CE4 /* Lunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC381D000FD5005B9CE4 /* Lunch.swift */; };
 		83A8AC3B1D001023005B9CE4 /* AfternoonSnack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC3A1D001023005B9CE4 /* AfternoonSnack.swift */; };
 		83A8AC3D1D001056005B9CE4 /* MorningSnack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC3C1D001056005B9CE4 /* MorningSnack.swift */; };
-		83A8AC3F1D0012E0005B9CE4 /* FoodGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC3E1D0012E0005B9CE4 /* FoodGroups.swift */; };
+		83A8AC3F1D0012E0005B9CE4 /* FoodTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC3E1D0012E0005B9CE4 /* FoodTypes.swift */; };
 		83A8AC411D001471005B9CE4 /* FoodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC401D001471005B9CE4 /* FoodGroup.swift */; };
 		83A8AC431D001F0D005B9CE4 /* MealPlanProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC421D001F0D005B9CE4 /* MealPlanProtocol.swift */; };
 		E49200A13FD45A832EC0C8B4 /* Pods_MealPlanExchangesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA66EE7C4F89F5D6D481F89 /* Pods_MealPlanExchangesUITests.framework */; };
@@ -67,14 +67,14 @@
 		835736521CFD3DC900AF6C09 /* MealPlanExchangesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanExchangesUITests.swift; sourceTree = "<group>"; };
 		835736541CFD3DC900AF6C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A8AC2C1D0001E2005B9CE4 /* GeneralMealPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMealPlan.swift; sourceTree = "<group>"; };
-		83A8AC301D00040C005B9CE4 /* MealProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealProtocol.swift; sourceTree = "<group>"; };
+		83A8AC301D00040C005B9CE4 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		83A8AC321D000A7B005B9CE4 /* MealsOfTheDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsOfTheDay.swift; sourceTree = "<group>"; };
 		83A8AC341D000BF8005B9CE4 /* Breakfast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breakfast.swift; sourceTree = "<group>"; };
 		83A8AC361D000F76005B9CE4 /* Dinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dinner.swift; sourceTree = "<group>"; };
 		83A8AC381D000FD5005B9CE4 /* Lunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lunch.swift; sourceTree = "<group>"; };
 		83A8AC3A1D001023005B9CE4 /* AfternoonSnack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfternoonSnack.swift; sourceTree = "<group>"; };
 		83A8AC3C1D001056005B9CE4 /* MorningSnack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorningSnack.swift; sourceTree = "<group>"; };
-		83A8AC3E1D0012E0005B9CE4 /* FoodGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodGroups.swift; sourceTree = "<group>"; };
+		83A8AC3E1D0012E0005B9CE4 /* FoodTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTypes.swift; sourceTree = "<group>"; };
 		83A8AC401D001471005B9CE4 /* FoodGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodGroup.swift; sourceTree = "<group>"; };
 		83A8AC421D001F0D005B9CE4 /* MealPlanProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealPlanProtocol.swift; sourceTree = "<group>"; };
 		99C6469E1CF973B47FED28AA /* Pods-MealPlanExchangesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchangesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchangesUITests/Pods-MealPlanExchangesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,10 +189,10 @@
 				83A8AC341D000BF8005B9CE4 /* Breakfast.swift */,
 				83A8AC361D000F76005B9CE4 /* Dinner.swift */,
 				83A8AC401D001471005B9CE4 /* FoodGroup.swift */,
-				83A8AC3E1D0012E0005B9CE4 /* FoodGroups.swift */,
+				83A8AC3E1D0012E0005B9CE4 /* FoodTypes.swift */,
 				83A8AC381D000FD5005B9CE4 /* Lunch.swift */,
 				83A8AC2C1D0001E2005B9CE4 /* GeneralMealPlan.swift */,
-				83A8AC301D00040C005B9CE4 /* MealProtocol.swift */,
+				83A8AC301D00040C005B9CE4 /* Meal.swift */,
 				83A8AC321D000A7B005B9CE4 /* MealsOfTheDay.swift */,
 				83A8AC3C1D001056005B9CE4 /* MorningSnack.swift */,
 				83A8AC421D001F0D005B9CE4 /* MealPlanProtocol.swift */,
@@ -501,7 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A8AC391D000FD5005B9CE4 /* Lunch.swift in Sources */,
-				83A8AC311D00040C005B9CE4 /* MealProtocol.swift in Sources */,
+				83A8AC311D00040C005B9CE4 /* Meal.swift in Sources */,
 				83A8AC2D1D0001E2005B9CE4 /* GeneralMealPlan.swift in Sources */,
 				83A8AC3D1D001056005B9CE4 /* MorningSnack.swift in Sources */,
 				83A8AC331D000A7B005B9CE4 /* MealsOfTheDay.swift in Sources */,
@@ -509,7 +509,7 @@
 				835736331CFD3DC900AF6C09 /* AppDelegate.swift in Sources */,
 				83A8AC371D000F76005B9CE4 /* Dinner.swift in Sources */,
 				83A8AC3B1D001023005B9CE4 /* AfternoonSnack.swift in Sources */,
-				83A8AC3F1D0012E0005B9CE4 /* FoodGroups.swift in Sources */,
+				83A8AC3F1D0012E0005B9CE4 /* FoodTypes.swift in Sources */,
 				83A8AC351D000BF8005B9CE4 /* Breakfast.swift in Sources */,
 				83A8AC411D001471005B9CE4 /* FoodGroup.swift in Sources */,
 				83A8AC431D001F0D005B9CE4 /* MealPlanProtocol.swift in Sources */,

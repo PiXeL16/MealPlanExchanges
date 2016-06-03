@@ -14,8 +14,8 @@ import UIKit
  */
 public struct FoodGroup {
     
-    var quantity: Int = 0
-    var group: FoodGroups = FoodGroups.Other
+   public var quantity: Int = 0
+   public var group: FoodTypes = FoodTypes.Other
     
     /**
      Initializer of the quantity and the group that the quantity is assign
@@ -25,7 +25,7 @@ public struct FoodGroup {
      
      - returns: <#return value description#>
      */
-    init(quantity: Int = 0, group: FoodGroups = FoodGroups.Other){
+    init(quantity: Int = 0, group: FoodTypes = FoodTypes.Other){
         
         self.quantity = quantity
         self.group = group

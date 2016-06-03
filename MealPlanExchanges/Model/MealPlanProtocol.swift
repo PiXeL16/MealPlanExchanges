@@ -13,18 +13,18 @@ import UIKit
  */
 protocol MealPlanProtocol {
     
-    var breakfast: MealProtocol {get set}
-    var morningSnack: MealProtocol {get set}
-    var lunch: MealProtocol {get set}
-    var afternoonSnack: MealProtocol {get set}
-    var dinner: MealProtocol {get set}
+    var breakfast: Meal {get set}
+    var morningSnack: Meal {get set}
+    var lunch: Meal {get set}
+    var afternoonSnack: Meal {get set}
+    var dinner: Meal {get set}
     
 }
 
 extension MealPlanProtocol{
     
     /// Array of meals of the day
-    var mealsOfTheDay: [MealProtocol]{
+    var mealsOfTheDay: [Meal]{
     
         get{
             return [self.breakfast, self.morningSnack, self.lunch, self.afternoonSnack, self.dinner]
@@ -34,7 +34,7 @@ extension MealPlanProtocol{
     var dairyTotal: Int{
         
         get{
-            return getTotalFromFoodGroup(FoodGroups.Dairy)
+            return getTotalFromFoodGroup(FoodTypes.Dairy)
         }
     }
     
@@ -46,7 +46,7 @@ extension MealPlanProtocol{
      
      - returns: <#return value description#>
      */
-    func getTotalFromFoodGroup(foodGroup: FoodGroups) -> Int{
+    func getTotalFromFoodGroup(foodGroup: FoodTypes) -> Int{
         
         var returnValue = 0
         

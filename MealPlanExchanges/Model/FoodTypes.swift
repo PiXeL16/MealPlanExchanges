@@ -19,7 +19,7 @@ import UIKit
  - Vegetable: <#Vegetable description#>
  - Other:     <#Other description#>
  */
-enum FoodGroups {
+public enum FoodTypes {
     
     case Dairy, Meat, Flour, Sugar, Fruit, Vegetable, Other
     

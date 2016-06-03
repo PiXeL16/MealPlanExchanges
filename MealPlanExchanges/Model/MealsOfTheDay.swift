@@ -11,7 +11,7 @@ import UIKit
 /**
  Represents the meals of the days
  */
-enum MealsOfTheDay {
+public enum MealsOfTheDay {
     
     case Breakfast, MorningSnack, Lunch, AfternoonSnack, Dinner, Other
 

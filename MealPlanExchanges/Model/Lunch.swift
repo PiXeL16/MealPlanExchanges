@@ -11,15 +11,17 @@ import UIKit
 /**
  *  Lunch class information
  */
-struct Lunch: MealProtocol {
+public struct Lunch: Meal {
     
-    var type = MealsOfTheDay.Lunch
+    public let type = MealsOfTheDay.Lunch
     
-    var dairy: FoodGroup = FoodGroup(group: FoodGroups.Dairy)
-    var meat : FoodGroup = FoodGroup(group: FoodGroups.Meat)
-    var flour: FoodGroup = FoodGroup(group: FoodGroups.Flour)
-    var sugar: FoodGroup = FoodGroup(group: FoodGroups.Sugar)
-    var fruit: FoodGroup = FoodGroup(group: FoodGroups.Fruit)
-    var vegetable: FoodGroup = FoodGroup(group: FoodGroups.Vegetable)
+    public var dairy: FoodGroup = FoodGroup(group: FoodTypes.Dairy)
+    public var meat : FoodGroup = FoodGroup(group: FoodTypes.Meat)
+    public var flour: FoodGroup = FoodGroup(group: FoodTypes.Flour)
+    public var sugar: FoodGroup = FoodGroup(group: FoodTypes.Sugar)
+    public var fruit: FoodGroup = FoodGroup(group: FoodTypes.Fruit)
+    public var vegetable: FoodGroup = FoodGroup(group: FoodTypes.Vegetable)
+    
+    public init(){}
     
 }

@@ -11,9 +11,9 @@ import UIKit
 /**
  *  Protocol with the values of what a meal should have
  */
-protocol MealProtocol {
+public protocol Meal {
     
-    var type:  MealsOfTheDay { get set }
+    var type:  MealsOfTheDay { get }
     
     var dairy: FoodGroup     { get set }
     var meat : FoodGroup     { get set }
@@ -23,22 +23,22 @@ protocol MealProtocol {
     var vegetable: FoodGroup { get set }
     
     init()
-    init(dairy: FoodGroup, meat: FoodGroup, flour: FoodGroup, sugar: FoodGroup, fruit: FoodGroup, vegetable: FoodGroup)
+
 
 }
 
 // MARK: - Extension to get a default initializer
-extension MealProtocol{
+extension Meal{
     
     
-    var foods: [FoodGroup]{
+    public var foods: [FoodGroup]{
         
         get{
             return [dairy, meat, flour, sugar, fruit, vegetable]
         }
     }
     
-    init(dairy: FoodGroup, meat: FoodGroup, flour: FoodGroup, sugar: FoodGroup, fruit: FoodGroup, vegetable: FoodGroup)
+    public init(dairy: FoodGroup, meat: FoodGroup, flour: FoodGroup, sugar: FoodGroup, fruit: FoodGroup, vegetable: FoodGroup)
     {
         self.init()
         
@@ -58,7 +58,7 @@ extension MealProtocol{
      
      - returns: <#return value description#>
      */
-    func getQuantityOfFoodGroup(foodGroup: FoodGroups) -> Int{
+    func getQuantityOfFoodGroup(foodGroup: FoodTypes) -> Int{
         
         var returnValue = 0
         

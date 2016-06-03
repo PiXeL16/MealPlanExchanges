@@ -13,13 +13,13 @@ import UIKit
  */
 public struct GeneralMealPlan : MealPlanProtocol {
     
-    var breakfast: MealProtocol
-    var morningSnack: MealProtocol
-    var lunch: MealProtocol
-    var afternoonSnack: MealProtocol
-    var dinner: MealProtocol
+    public var breakfast: Meal
+    public var morningSnack: Meal
+    public var lunch: Meal
+    public var afternoonSnack: Meal
+    public var dinner: Meal
     
-    init (breakfast: MealProtocol, morningSnack: MealProtocol, lunch: MealProtocol, afternoonSnack: MealProtocol, dinner: MealProtocol){
+    init (breakfast: Meal, morningSnack: Meal, lunch: Meal, afternoonSnack: Meal, dinner: Meal){
         
         self.breakfast      = breakfast
         self.morningSnack   = morningSnack
