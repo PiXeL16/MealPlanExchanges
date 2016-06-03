@@ -38,18 +38,6 @@ extension Meal{
         }
     }
     
-    public init(dairy: FoodGroup, meat: FoodGroup, flour: FoodGroup, sugar: FoodGroup, fruit: FoodGroup, vegetable: FoodGroup)
-    {
-        self.init()
-        
-        self.dairy     = dairy
-        self.meat      = meat
-        self.flour     = flour
-        self.sugar     = sugar
-        self.fruit     = fruit
-        self.vegetable = vegetable
-        
-    }
     
     /**
      Returns the total of quantity of a food group

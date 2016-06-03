@@ -26,6 +26,7 @@
 		83A8AC411D001471005B9CE4 /* FoodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC401D001471005B9CE4 /* FoodGroup.swift */; };
 		83A8AC431D001F0D005B9CE4 /* MealPlanProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC421D001F0D005B9CE4 /* MealPlanProtocol.swift */; };
 		83A8AC471D0124AE005B9CE4 /* MealSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC461D0124AE005B9CE4 /* MealSpecs.swift */; };
+		83A8AC491D012D18005B9CE4 /* MealPlanSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8AC481D012D18005B9CE4 /* MealPlanSpecs.swift */; };
 		E49200A13FD45A832EC0C8B4 /* Pods_MealPlanExchangesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA66EE7C4F89F5D6D481F89 /* Pods_MealPlanExchangesUITests.framework */; };
 		E51F2C3C358B706992704194 /* Pods_MealPlanExchanges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC07839EEE87539E0AF43809 /* Pods_MealPlanExchanges.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		83A8AC401D001471005B9CE4 /* FoodGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodGroup.swift; sourceTree = "<group>"; };
 		83A8AC421D001F0D005B9CE4 /* MealPlanProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealPlanProtocol.swift; sourceTree = "<group>"; };
 		83A8AC461D0124AE005B9CE4 /* MealSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealSpecs.swift; sourceTree = "<group>"; };
+		83A8AC481D012D18005B9CE4 /* MealPlanSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealPlanSpecs.swift; sourceTree = "<group>"; };
 		99C6469E1CF973B47FED28AA /* Pods-MealPlanExchangesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchangesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchangesUITests/Pods-MealPlanExchangesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC07839EEE87539E0AF43809 /* Pods_MealPlanExchanges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealPlanExchanges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBF174742BA10565C03C63E /* Pods-MealPlanExchangesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchangesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchangesUITests/Pods-MealPlanExchangesUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				83A8AC461D0124AE005B9CE4 /* MealSpecs.swift */,
+				83A8AC481D012D18005B9CE4 /* MealPlanSpecs.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A8AC491D012D18005B9CE4 /* MealPlanSpecs.swift in Sources */,
 				83A8AC471D0124AE005B9CE4 /* MealSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

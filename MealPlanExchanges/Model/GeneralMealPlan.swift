@@ -19,7 +19,18 @@ public struct GeneralMealPlan : MealPlanProtocol {
     public var afternoonSnack: Meal
     public var dinner: Meal
     
-    init (breakfast: Meal, morningSnack: Meal, lunch: Meal, afternoonSnack: Meal, dinner: Meal){
+    
+    public init(){
+        
+        self.breakfast = Breakfast()
+        self.morningSnack = MorningSnack()
+        self.lunch = Lunch()
+        self.afternoonSnack = AfternoonSnack()
+        self.dinner = Dinner()
+        
+    }
+    
+    public init (breakfast: Meal, morningSnack: Meal, lunch: Meal, afternoonSnack: Meal, dinner: Meal){
         
         self.breakfast      = breakfast
         self.morningSnack   = morningSnack

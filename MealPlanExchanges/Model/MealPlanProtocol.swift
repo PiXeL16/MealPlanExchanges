@@ -24,14 +24,14 @@ public protocol MealPlanProtocol {
 extension MealPlanProtocol{
     
     /// Array of meals of the day
-    var mealsOfTheDay: [Meal]{
+    public var mealsOfTheDay: [Meal]{
     
         get{
             return [self.breakfast, self.morningSnack, self.lunch, self.afternoonSnack, self.dinner]
         }
     }
     
-    var dairyTotal: Int{
+    public var dairyTotal: Int{
         
         get{
             return getTotalFromFoodType(FoodTypes.Dairy)

@@ -34,6 +34,16 @@ class MealSpecs: QuickSpec {
                 
             }
             
+            
+            it("initial type to be correct with constructor"){
+                
+                let afternoonSnack = AfternoonSnack()
+                
+                expect(afternoonSnack.dairy.group).to(equal(FoodTypes.Dairy))
+                
+            }
+
+            
             it("has valid foods"){
                 
                 let afternoonSnack = AfternoonSnack()
