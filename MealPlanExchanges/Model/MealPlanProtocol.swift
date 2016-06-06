@@ -50,10 +50,12 @@ extension MealPlanProtocol{
         
         var returnValue = 0
         
-        for meal in mealsOfTheDay {
-            
-            returnValue = returnValue + meal.getQuantityOfFoodGroup(foodType)
-        }
+        /**
+         *  Map the array and get the quantity of Food group, then sum all of those values.s
+         *
+         *  @return <#return value description#>
+         */
+        returnValue = mealsOfTheDay.map({$0.getQuantityOfFoodGroup(foodType)}).reduce(0, combine: {$0 + $1})
         
         return returnValue
     }

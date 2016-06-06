@@ -56,6 +56,7 @@ extension Meal{
                 returnValue = food.quantity
                 break
             }
+            
         }
         
         return returnValue
