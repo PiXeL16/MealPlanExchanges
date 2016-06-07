@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7623061E9EE3793EA262E849 /* Pods_MealPlanExchangesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52137560627A982119DB9BA2 /* Pods_MealPlanExchangesTests.framework */; };
+		8338B25C1D078783002D04C6 /* MealPlanSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8338B25B1D078783002D04C6 /* MealPlanSetup.storyboard */; };
 		835736331CFD3DC900AF6C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835736321CFD3DC900AF6C09 /* AppDelegate.swift */; };
 		835736351CFD3DC900AF6C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835736341CFD3DC900AF6C09 /* ViewController.swift */; };
 		835736381CFD3DC900AF6C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835736361CFD3DC900AF6C09 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		57B49449C4F01ABDD1AEFEF9 /* Pods-MealPlanExchanges.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchanges.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchanges/Pods-MealPlanExchanges.release.xcconfig"; sourceTree = "<group>"; };
 		625C500B3FDD088B6FF12366 /* Pods-MealPlanExchanges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchanges.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchanges/Pods-MealPlanExchanges.debug.xcconfig"; sourceTree = "<group>"; };
 		755B49E5C00489A7C373BB19 /* Pods-MealPlanExchangesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchangesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchangesTests/Pods-MealPlanExchangesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8338B25B1D078783002D04C6 /* MealPlanSetup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MealPlanSetup.storyboard; sourceTree = "<group>"; };
 		8357362F1CFD3DC900AF6C09 /* MealPlanExchanges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealPlanExchanges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835736321CFD3DC900AF6C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		835736341CFD3DC900AF6C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				8357363B1CFD3DC900AF6C09 /* LaunchScreen.storyboard */,
 				835736361CFD3DC900AF6C09 /* Main.storyboard */,
 				835736341CFD3DC900AF6C09 /* ViewController.swift */,
+				8338B25B1D078783002D04C6 /* MealPlanSetup.storyboard */,
 			);
 			path = MealPlanExchanges;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			files = (
 				8357363D1CFD3DC900AF6C09 /* LaunchScreen.storyboard in Resources */,
 				8357363A1CFD3DC900AF6C09 /* Assets.xcassets in Resources */,
+				8338B25C1D078783002D04C6 /* MealPlanSetup.storyboard in Resources */,
 				835736381CFD3DC900AF6C09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
