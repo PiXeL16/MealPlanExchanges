@@ -58,9 +58,9 @@
 		57B49449C4F01ABDD1AEFEF9 /* Pods-MealPlanExchanges.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchanges.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchanges/Pods-MealPlanExchanges.release.xcconfig"; sourceTree = "<group>"; };
 		625C500B3FDD088B6FF12366 /* Pods-MealPlanExchanges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchanges.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchanges/Pods-MealPlanExchanges.debug.xcconfig"; sourceTree = "<group>"; };
 		755B49E5C00489A7C373BB19 /* Pods-MealPlanExchangesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealPlanExchangesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealPlanExchangesTests/Pods-MealPlanExchangesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8323D2DF1D07DAED0058738E /* FoodTypeSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodTypeSelectView.xib; path = MealPlanExchanges/FoodTypeSelectView.xib; sourceTree = SOURCE_ROOT; };
-		8323D2E31D07E23E0058738E /* FoodTypeSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTypeSelectView.swift; path = MealPlanExchanges/FoodTypeSelectView.swift; sourceTree = SOURCE_ROOT; };
-		8323D2E51D07E42D0058738E /* ViewUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewUtil.swift; path = MealPlanExchanges/ViewUtil.swift; sourceTree = SOURCE_ROOT; };
+		8323D2DF1D07DAED0058738E /* FoodTypeSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTypeSelectView.xib; sourceTree = "<group>"; };
+		8323D2E31D07E23E0058738E /* FoodTypeSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTypeSelectView.swift; sourceTree = "<group>"; };
+		8323D2E51D07E42D0058738E /* ViewUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtil.swift; sourceTree = "<group>"; };
 		8338B25B1D078783002D04C6 /* MealPlanSetup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MealPlanSetup.storyboard; sourceTree = "<group>"; };
 		8357362F1CFD3DC900AF6C09 /* MealPlanExchanges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealPlanExchanges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835736321CFD3DC900AF6C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,8 +169,8 @@
 				8357363E1CFD3DC900AF6C09 /* Info.plist */,
 				8357363B1CFD3DC900AF6C09 /* LaunchScreen.storyboard */,
 				835736361CFD3DC900AF6C09 /* Main.storyboard */,
-				835736341CFD3DC900AF6C09 /* ViewController.swift */,
 				8338B25B1D078783002D04C6 /* MealPlanSetup.storyboard */,
+				835736341CFD3DC900AF6C09 /* ViewController.swift */,
 			);
 			path = MealPlanExchanges;
 			sourceTree = "<group>";
@@ -201,12 +201,12 @@
 				83A8AC361D000F76005B9CE4 /* Dinner.swift */,
 				83A8AC401D001471005B9CE4 /* FoodGroup.swift */,
 				83A8AC3E1D0012E0005B9CE4 /* FoodTypes.swift */,
-				83A8AC381D000FD5005B9CE4 /* Lunch.swift */,
 				83A8AC2C1D0001E2005B9CE4 /* GeneralMealPlan.swift */,
+				83A8AC381D000FD5005B9CE4 /* Lunch.swift */,
 				83A8AC301D00040C005B9CE4 /* Meal.swift */,
+				83A8AC421D001F0D005B9CE4 /* MealPlanProtocol.swift */,
 				83A8AC321D000A7B005B9CE4 /* MealsOfTheDay.swift */,
 				83A8AC3C1D001056005B9CE4 /* MorningSnack.swift */,
-				83A8AC421D001F0D005B9CE4 /* MealPlanProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,8 +221,8 @@
 		835736621CFD4BF300AF6C09 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8323D2DF1D07DAED0058738E /* FoodTypeSelectView.xib */,
 				8323D2E31D07E23E0058738E /* FoodTypeSelectView.swift */,
+				8323D2DF1D07DAED0058738E /* FoodTypeSelectView.xib */,
 				8323D2E51D07E42D0058738E /* ViewUtil.swift */,
 			);
 			path = Views;
@@ -245,10 +245,10 @@
 		83A8AC451D012485005B9CE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				83A8AC461D0124AE005B9CE4 /* MealSpecs.swift */,
 				83A8AC481D012D18005B9CE4 /* MealPlanSpecs.swift */,
+				83A8AC461D0124AE005B9CE4 /* MealSpecs.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B8E2FB7CFF0897F779F82075 /* Frameworks */ = {
