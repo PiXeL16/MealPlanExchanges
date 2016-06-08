@@ -21,6 +21,18 @@ import GMStepper
     
     @IBOutlet weak var foodTypeImage: UIImageView!
     
+    
+    @IBInspectable var text: String?{
+        
+        get{
+            return foodTypeNameLabel.text
+        }
+        
+        set{
+            foodTypeNameLabel.text = newValue
+        }
+    }
+    
     @IBInspectable var quantity : Double{
         
         get{

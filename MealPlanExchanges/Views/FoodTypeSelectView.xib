@@ -65,7 +65,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dairy" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-V5-FjS">
-                    <rect key="frame" x="60" y="10" width="25" height="25"/>
+                    <rect key="frame" x="60" y="8" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="25" id="U1d-33-vwa"/>
                         <constraint firstAttribute="height" constant="25" id="bhC-XC-hbM"/>
@@ -80,7 +80,7 @@
                 <constraint firstItem="Z5c-cj-GwY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IqC-1U-7S2"/>
                 <constraint firstItem="Aaq-ns-QTW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mad-nE-DlW"/>
                 <constraint firstAttribute="trailing" secondItem="Z5c-cj-GwY" secondAttribute="trailing" constant="8" id="PoY-YA-nww"/>
-                <constraint firstItem="Idt-V5-FjS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UeY-fN-A7n"/>
+                <constraint firstItem="Idt-V5-FjS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-2.5" id="UeY-fN-A7n"/>
                 <constraint firstItem="Idt-V5-FjS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="lsV-rJ-hCK"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
