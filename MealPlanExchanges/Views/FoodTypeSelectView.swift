@@ -12,7 +12,7 @@ import GMStepper
 @IBDesignable class FoodTypeSelectView: UIView {
     
     
-    /// View to hold the the return of the xib file
+    /// View to hold the return of the xib file
     private var view: UIView!
     
     @IBOutlet weak var foodTypeNameLabel: UILabel!
@@ -62,7 +62,9 @@ import GMStepper
         xibSetup()
     }
     
-    
+    /**
+     Setup the xibs file of the view
+     */
     func xibSetup() {
         
         let bundle = NSBundle(forClass: self.dynamicType)
@@ -76,23 +78,6 @@ import GMStepper
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
     }
-    
-    
-    /**
-     Setup the view from the xib file
-     */
-//    func xibSetup() {
-//        
-//        view = FoodTypeSelectView.loadFromNibNamed("FoodTypeSelectView", bundle: NSBundle(forClass: self.dynamicType))
-//        
-//        // use bounds not frame or it'll be offset
-//        view.frame = bounds
-//        
-//        // Make the view stretch with containing view
-//        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
-//        // Adding custom subview on top of our view (over any custom drawing > see note below)
-//        addSubview(view)
-//    }
 
     /*
     // Only override drawRect: if you perform custom drawing.

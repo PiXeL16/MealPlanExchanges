@@ -11,6 +11,14 @@ import UIKit
 // MARK: - Extension and utils for UI View
 extension UIView {
     
+    /**
+     Loads a view from the nib
+     
+     - parameter nibName: nib nabe
+     - parameter bundle:  bundle to load
+     
+     - returns: view
+     */
     func loadViewFromNibNamed(nibName:String, bundle: NSBundle?) -> UIView {
         
         let bundle = NSBundle(forClass: self.dynamicType)
