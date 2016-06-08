@@ -27,6 +27,7 @@ PODS:
   - FirebaseDatabase (3.0.1):
     - FirebaseAnalytics (~> 3.2)
   - FirebaseInstanceID (1.0.6)
+  - GMStepper (1.2.0)
   - GoogleInterchangeUtilities (1.2.1):
     - GoogleSymbolUtilities (~> 1.0)
   - GoogleNetworkingUtilities (1.2.1):
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - DynamicColor
   - Firebase/Auth
   - Firebase/Database
+  - GMStepper
   - ModelMapper (~> 1.0.3)
   - Nimble
   - Quick
@@ -60,6 +62,7 @@ SPEC CHECKSUMS:
   FirebaseAuth: 94b851fc345ce98036dfedfdc2eddeaef8fa3b4c
   FirebaseDatabase: 34301d11621a83546f39f670d256477ba6f7fcea
   FirebaseInstanceID: d014d574053a2fe84478f12f7bae96979e7051bb
+  GMStepper: e743b5648ae5fe877e33d3b51b5aa2df432f179d
   GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
   GoogleNetworkingUtilities: 3e83269048cfb498dc7ec83ab36813360965c74f
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
@@ -70,6 +73,6 @@ SPEC CHECKSUMS:
   RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
 
-PODFILE CHECKSUM: 82072766c4f5143db10073f73bee35940b0c97a4
+PODFILE CHECKSUM: e5df15db0b600fb29cd478dfb150fcb4ad6a15ab
 
 COCOAPODS: 1.0.0

@@ -31,7 +31,7 @@ extension MealPlanProtocol{
         }
     }
     
-    public var dairyTotal: Int{
+    public var dairyTotal: Double{
         
         get{
             return getTotalFromFoodType(FoodTypes.Dairy)
@@ -46,9 +46,9 @@ extension MealPlanProtocol{
      
      - returns: <#return value description#>
      */
-    public func getTotalFromFoodType(foodType: FoodTypes) -> Int{
+    public func getTotalFromFoodType(foodType: FoodTypes) -> Double{
         
-        var returnValue = 0
+        var returnValue:Double = 0
         
         /**
          *  Map the array and get the quantity of Food group, then sum all of those values.s

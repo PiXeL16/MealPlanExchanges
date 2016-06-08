@@ -24,6 +24,9 @@ target 'MealPlanExchanges' do
 
   # JSON Parser
   pod 'ModelMapper', '~> 1.0.3'
+  
+  #UI
+  pod 'GMStepper'
 
   target 'MealPlanExchangesTests' do
     inherit! :search_paths
