@@ -160,7 +160,6 @@
 				8357363B1CFD3DC900AF6C09 /* LaunchScreen.storyboard */,
 				835736361CFD3DC900AF6C09 /* Main.storyboard */,
 				8338B25B1D078783002D04C6 /* MealPlanSetup.storyboard */,
-				835736341CFD3DC900AF6C09 /* ViewController.swift */,
 			);
 			path = MealPlanExchanges;
 			sourceTree = "<group>";
@@ -221,6 +220,7 @@
 		835736631CFD4BF800AF6C09 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				835736341CFD3DC900AF6C09 /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g1h-IZ-yRK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g1h-IZ-yRK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -35,11 +35,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="dUf-2O-KJS">
-                                <rect key="frame" x="152" y="99" width="296" height="183"/>
+                                <rect key="frame" x="152" y="99" width="296" height="203"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="296" id="Mty-Km-9xJ"/>
-                                    <constraint firstAttribute="height" constant="183" id="QNq-Me-q3y"/>
+                                    <constraint firstAttribute="width" priority="999" constant="296" id="Mty-Km-9xJ"/>
+                                    <constraint firstAttribute="height" priority="999" constant="183" id="QNq-Me-q3y"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="52" y="99" width="296" height="0.0"/>
+                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBJ-LI-geI">
                                 <rect key="frame" x="0.0" y="550" width="600" height="50"/>
@@ -51,6 +54,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="350" width="400" height="50"/>
+                                </variation>
                                 <connections>
                                     <segue destination="ECx-8Q-6q7" kind="show" id="3Gx-JV-pAa"/>
                                 </connections>
@@ -63,6 +69,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="221" width="360" height="30"/>
+                                </variation>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="UJs-Qj-YYX">
                                 <rect key="frame" x="257" y="492" width="87" height="37"/>
@@ -71,6 +80,9 @@
                                 </constraints>
                                 <color key="pageIndicatorTintColor" red="0.8980392157" green="0.36470588240000001" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.22352941176470589" green="0.66274509803921566" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="157" y="309" width="87" height="20"/>
+                                </variation>
                             </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-RF-EEb">
                                 <rect key="frame" x="20" y="362" width="560" height="21"/>
@@ -80,6 +92,9 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="179" width="360" height="21"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,7 +109,7 @@
                             <constraint firstItem="dUf-2O-KJS" firstAttribute="centerX" secondItem="jX0-qR-21p" secondAttribute="centerX" id="VVM-Qh-zqq"/>
                             <constraint firstItem="dBJ-LI-geI" firstAttribute="leading" secondItem="jX0-qR-21p" secondAttribute="leadingMargin" constant="-20" id="WQs-qv-PNw"/>
                             <constraint firstItem="dUf-2O-KJS" firstAttribute="top" secondItem="Jho-Iu-A9O" secondAttribute="bottom" constant="35" id="dQa-fu-LSd"/>
-                            <constraint firstItem="bR2-RF-EEb" firstAttribute="top" secondItem="dUf-2O-KJS" secondAttribute="bottom" constant="80" id="fDA-Hk-WAL"/>
+                            <constraint firstItem="bR2-RF-EEb" firstAttribute="top" secondItem="dUf-2O-KJS" secondAttribute="bottom" constant="60" id="fDA-Hk-WAL"/>
                             <constraint firstItem="bR2-RF-EEb" firstAttribute="leading" secondItem="jX0-qR-21p" secondAttribute="leadingMargin" id="hEQ-io-SZA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dBJ-LI-geI" secondAttribute="trailing" constant="-20" id="jy0-zX-z0M"/>
                             <constraint firstItem="JEd-jI-Jfm" firstAttribute="centerX" secondItem="jX0-qR-21p" secondAttribute="centerX" id="o1R-5z-Ev7"/>
@@ -179,8 +194,9 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="quantity">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Dairy"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
