@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="MealPlanSetupCellTableViewCell" customModule="MealPlanExchanges" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BK6-l3-pXu" customClass="GMStepper" customModule="GMStepper">
+                        <rect key="frame" x="288" y="10" width="160" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="aZ8-E3-Skv"/>
+                            <constraint firstAttribute="width" constant="160" id="fvF-Ck-76U"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="stepValue">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showIntegerIfDoubleIsInteger" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="buttonsBackgroundColor">
+                                <color key="value" red="0.8980392157" green="0.36470588240000001" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="labelTextColor">
+                                <color key="value" red="0.8980392157" green="0.36470588240000001" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="labelBackgroundColor">
+                                <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="limitHitAnimationColor">
+                                <color key="value" red="0.2784313725" green="0.52549019610000003" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dairy" translatesAutoresizingMaskIntoConstraints="NO" id="KGE-Ps-aBn">
+                        <rect key="frame" x="66" y="12" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="D1p-0v-25X"/>
+                            <constraint firstAttribute="width" constant="25" id="Eks-r6-8VX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bHh-1L-L4C">
+                        <rect key="frame" x="8" y="11" width="44.5" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="HkQ-VE-OJn"/>
+                            <constraint firstAttribute="height" constant="28" id="fDw-cK-UvT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BK6-l3-pXu" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="CaP-GM-fRN"/>
+                    <constraint firstItem="bHh-1L-L4C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IFj-WK-qeE"/>
+                    <constraint firstItem="bHh-1L-L4C" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PNt-DX-jM0"/>
+                    <constraint firstItem="KGE-Ps-aBn" firstAttribute="leading" secondItem="bHh-1L-L4C" secondAttribute="trailing" constant="13.5" id="Thz-eL-FrS"/>
+                    <constraint firstItem="BK6-l3-pXu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="skv-Rv-tQR"/>
+                    <constraint firstItem="KGE-Ps-aBn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="u5n-lH-EoY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="foodTypeIconImageView" destination="KGE-Ps-aBn" id="5HX-yK-Ian"/>
+                <outlet property="foodTypeNameLabel" destination="bHh-1L-L4C" id="wjM-2J-K9L"/>
+                <outlet property="foodTypeStepper" destination="BK6-l3-pXu" id="h7Y-RV-KVw"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="315"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Dairy" width="60" height="60"/>
+    </resources>
+</document>
