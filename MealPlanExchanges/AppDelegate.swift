@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //CocoaLumberjack initializer
         initLogging()
         //Inits firebase
-        //initFirebase()
+        initFirebase()
         
         DDLogInfo("App Started")
         
