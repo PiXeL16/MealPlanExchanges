@@ -28,7 +28,6 @@ class ReusableViewSpec: QuickSpec {
                 
             }
             
-            
             it("nib loadable is not null"){
                 
                 expect(MealPlanSetupHeaderTableViewCell.nibName).toNot(beEmpty())
@@ -38,6 +37,5 @@ class ReusableViewSpec: QuickSpec {
             }
         }
     }
-    
 }
 

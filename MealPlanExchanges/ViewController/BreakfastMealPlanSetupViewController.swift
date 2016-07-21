@@ -13,14 +13,20 @@ class BreakfastMealPlanSetupViewController: UIViewController,UITableViewDelegate
     
     @IBOutlet weak var mealPlanSetupTableView: UITableView!
     
-    var breakfastDataSource:MealPlanSetupTableDataSource = MealPlanSetupTableDataSource()
+    var breakfastDataSource:MealPlanSetupTableDataAndDelegate = MealPlanSetupTableDataAndDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mealPlanSetupTableView.register(MealPlanSetupHeaderTableViewCell.self)
+        mealPlanSetupTableView.register(MealPlanSetupDescriptionTableViewCell.self)
         
-        mealPlanSetupTableView.delegate = self
+        mealPlanSetupTableView.estimatedRowHeight = 45
+        mealPlanSetupTableView.rowHeight = UITableViewAutomaticDimension
+        mealPlanSetupTableView.separatorStyle = .None
+
+        
+        mealPlanSetupTableView.delegate = breakfastDataSource
         mealPlanSetupTableView.dataSource = breakfastDataSource
 
         // Do any additional setup after loading the view.
